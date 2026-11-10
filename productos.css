@@ -117,6 +117,16 @@ footer .titulo-contacto {
     color: rgb(0, 0, 0);
 }
 
+/* Indicador visible para navegación mediante teclado */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #ffbf47;
+    outline-offset: 3px;
+}
+
 * {
     box-sizing: border-box;
 }

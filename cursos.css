@@ -1,0 +1,310 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: rgb(196, 226, 252);
+}
+
+header {
+    background-color: rgb(2, 28, 139);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 180px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+header img {
+    position: absolute;
+    left: 140px;
+    height: 250px;
+    max-width: none;
+    object-fit: contain;
+}
+
+header h1 {
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+}
+
+nav {
+    background-color: rgb(192, 199, 211);
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+aside {
+    background-color: #05053b;
+}
+
+footer {
+    background-color: #060668;
+}
+
+
+.contenedor {
+    display: grid;
+    grid-template-rows: 200px 30px;
+    min-height: 100vh;
+}
+
+.imagen {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    /* Selecciona todas las etiquetas <table> de la página */
+    border-collapse: collapse;
+    /* Fusiona los bordes de las celdas para evitar líneas dobles */
+    margin: 20px auto;
+    /* Deja un espacio vertical de 20px y centra la tabla horizontalmente */
+    width: 80%;
+    /* Hace que la tabla ocupe el 80% del ancho de su contenedor */
+}
+
+table,
+th,
+td {
+    /* Selecciona de forma conjunta las tablas, los encabezados y las celdas */
+    color: rgb(0, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 1px solid #999;
+    /* Aplica un borde sólido de 1 píxel y color gris a la estructura y celdas */
+    padding: 8px;
+    /* Añade un espacio de relleno interno para que el texto no quede pegado a los bordes */
+    text-align: center;
+    /* Centra horizontalmente el texto dentro de todas las celdas */
+}
+
+.contenido1 {
+    background-color: rgba(118, 120, 136, 0.596);
+    text-align: center;
+    padding: 35px 20px;
+    margin-top: 15px;
+    border-radius: 12px;
+}
+
+.contenido2 {
+    background-color: rgb(255, 255, 255);
+}
+
+table {
+    width: 95%;
+    margin: 25px auto;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px #00000015;
+}
+
+.tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+}
+
+caption {
+    font-size: 22px;
+    font-weight: bold;
+    color: #173b85;
+    padding: 15px;
+}
+
+th,
+td {
+    padding: 18px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+    color: #263449;
+}
+
+thead th {
+    background-color: #173b85;
+    color: white;
+    text-align: center;
+}
+
+tbody th {
+    color: #173b85;
+    font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f6ff;
+}
+
+tbody tr:hover {
+    background-color: #e5edff;
+}
+
+.dias {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.hora {
+    display: inline-block;
+    padding: 7px 12px;
+    background-color: #dbeafe;
+    color: #173b85;
+    border-radius: 8px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.contenido3 {
+    background-color: rgba(26, 50, 128, 0.993);
+    padding: 40px 15px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.registro {
+    width: 100%;
+    max-width: 460px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #00000018;
+}
+
+.registro h2 {
+    color: #173b85;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.registro p {
+    text-align: center;
+    color: #52627a;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#formulario label {
+    font-weight: 600;
+    color: #263449;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+#formulario input,
+#formulario select,
+#formulario textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #b8c8e0;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+    background-color: white;
+    color: #263449;
+}
+
+#formulario input:focus,
+#formulario select:focus,
+#formulario textarea:focus {
+    outline: 2px solid #2563eb;
+    outline-offset: 1px;
+}
+
+#formulario button {
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-enviar {
+    background-color: #173b85;
+    color: white;
+    margin-top: 25px;
+}
+
+.btn-enviar:hover {
+    background-color: #2563eb;
+}
+
+.btn-limpiar {
+    background-color: #e2e8f0;
+    color: #263449;
+    margin-top: 10px;
+}
+
+#mensaje {
+    margin-top: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        min-width: 650px;
+        font-size: 14px;
+    }
+
+    .registro {
+        padding: 20px;
+    }
+
+    .contenido2 {
+        padding: 20px 10px;
+    }
+}
+
+/* Media Query para tablets */
+@media (max-width: 768px) {
+
+    body {
+        padding: 5px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .imagen {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+
+/* Media Query para celulares */
+@media (max-width: 480px) {
+
+    table {
+        font-size: 0.8rem;
+    }
+
+    .contenido1,
+    .contenido2,
+    .contenido3 {
+        padding: 5px;
+    }
+
+}

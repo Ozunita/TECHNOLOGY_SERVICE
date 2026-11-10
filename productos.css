@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: rgb(196, 226, 252);
+}
+
+header {
+    background-color: rgb(2, 28, 139);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 180px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+header img {
+    position: absolute;
+    left: 140px;
+    height: 250px;
+    max-width: none;
+    object-fit: contain;
+}
+
+header h1 {
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+}
+
+nav {
+    background-color: rgb(192, 199, 211);
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+aside {
+    background-color: #05053b;
+}
+
+footer {
+    background-color: #060668;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-rows: 200px 30px;
+    min-height: 100vh;
+}
+
+.imagen {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenido1 {
+    background-color: rgba(118, 120, 136, 0.596);
+    text-align: center;
+    margin-top: 1.5%;
+}
+
+.contenido2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #14296d;
+    text-align: center;
+    margin-top: 1.5%;
+}
+
+.contenido3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #04164d;
+    text-align: center;
+    margin-top: 1.5%;
+}
+
+.contenido4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rgba(118, 120, 136, 0.596);
+    text-align: center;
+    margin-top: 1.5%;
+}
+
+.art1 {
+    background-color: rgb(255, 255, 255);
+}
+
+.art2 {
+    background-color: rgb(255, 255, 255);
+}
+
+.art3 {
+    background-color: rgb(255, 255, 255);
+}
+
+.art4 {
+    background-color: rgb(255, 255, 255);
+}
+
+.art5 {
+    background-color: rgb(255, 255, 255);
+}
+
+.art6 {
+    background-color: rgb(255, 255, 255);
+}
+
+/* Media Query para tablets */
+@media (max-width: 768px) {
+
+    .contenido2,
+    .contenido3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    body {
+        padding: 5px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+}
+
+/* Media Query para celulares */
+@media (max-width: 480px) {
+
+    .contenido2,
+    .contenido3 {
+        grid-template-columns: 1fr;
+    }
+
+}

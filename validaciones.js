@@ -32,14 +32,14 @@ formulario.addEventListener("submit", function (evento) {
     mensaje.className = "mensaje-error";
 
     if (!soloLetras.test(nombre) || nombre.length < 2) {
-        mensaje.textContent = "Ingresa un nombre válido, solo letras.";
+        mensaje.textContent = "El nombre no debe contener números ni caracteres especiales.";
         document.getElementById("nombre").setAttribute("aria-invalid", "true");
         document.getElementById("nombre").focus();
         return;
     }
 
-    if (!soloLetras.test(apellido) || apellido.length < 2) {
-        mensaje.textContent = "Ingresa un apellido válido.";
+     if (!soloLetras.test(apellido) || apellido.length < 2) {
+        mensaje.textContent = "El apellido no debe contener números ni caracteres especiales.";
         document.getElementById("apellido").setAttribute("aria-invalid", "true");
         document.getElementById("apellido").focus();
         return;
@@ -74,7 +74,11 @@ formulario.addEventListener("submit", function (evento) {
     }
 
     mensaje.className = "mensaje-exito";
-    mensaje.textContent = "Datos validados correctamente. Tu inscripción está lista para enviarse.";
+    mensaje.textContent = "La inscripción se ha realizado con éxito.";
+
+    alert("La inscripción se ha realizado con éxito");
+
+    formulario.reset();
 });
 
 formulario.addEventListener("reset", function () {
@@ -87,14 +91,7 @@ formulario.addEventListener("reset", function () {
     }, 0);
 });
 
-// Mensaje de confirmación para indicar que el registro se ha realizado con éxito.
-document.getElementById("formulario").addEventListener("submit", function (event) {
-    event.preventDefault();
 
-    alert("La inscripción se ha realizado con éxito");
-
-    document.getElementById("formulario").reset();
-});
 // Mensaje textual para los errores de validación nativa del navegador.
 formulario.addEventListener("invalid", function (evento) {
     const campo = evento.target;
